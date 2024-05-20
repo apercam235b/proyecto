@@ -2,7 +2,7 @@ import asyncio
 import websockets
 
 async def listen():
-    uri = "ws://172.24.1.27:80"  # Reemplaza <ESP32_IP> con la dirección IP de tu ESP32
+    uri = "ws://172.24.1.28:80"  # Reemplaza <ESP32_IP> con la dirección IP de tu ESP32
 
     async with websockets.connect(uri) as websocket:
         print("Connected to WebSocket server")
