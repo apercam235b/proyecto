@@ -10,9 +10,9 @@ const char* password = "Jonnyessubnormal889";
 void setup() {
   Serial.begin(115200);
 
-  // Inicializar pines GPIO
-  pinMode(16, OUTPUT);
-  pinMode(17, OUTPUT);
+  // Inicializar pines GPIO como entradas
+  pinMode(16, INPUT);
+  pinMode(17, INPUT);
 
   WiFi.begin(ssid, password);
 
@@ -38,15 +38,20 @@ void loop() {
 
       if (data.length() > 0) {
         Serial.println(data);
-        webSocketServer.sendData(data);
 
-        // Simulación del envío de datos por GPIO 16 y 17
-        digitalWrite(16, HIGH);
-        delay(500);  // Mantener el estado por un corto tiempo
-        digitalWrite(16, LOW);
-        digitalWrite(17, HIGH);
-        delay(500);  // Mantener el estado por un corto tiempo
-        digitalWrite(17, LOW);
+        // Leer el estado de los pines GPIO 16 y 17
+        int pin16State = digitalRead(16);
+        int pin17State = digitalRead(17);
+
+        // Imprimir el estado de los pines en la consola
+        Serial.print("Pin 16: ");
+        Serial.println(pin16State);
+        Serial.print("Pin 17: ");
+        Serial.println(pin17State);
+
+        // Enviar el estado de los pines al cliente
+        String message = "Pin 16: " + String(pin16State) + " Pin 17: " + String(pin17State);
+        webSocketServer.sendData(message);
       }
 
       delay(10); // Pequeño retraso para la recepción de datos
@@ -57,3 +62,4 @@ void loop() {
 
   delay(100);
 }
+
