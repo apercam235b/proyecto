@@ -4,7 +4,7 @@ import time
 
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
-
+#Carlos
 servoPINbase = 11
 servoPINbrazo = 13
 
