@@ -1,10 +1,11 @@
 version: '3.8'
 
 services:
-  web:
+  websocket:
+    container_name: websocket
     build: .
     ports:
       - "5000:5000"
     volumes:
       - ./scripts:/scripts
-    command: python ./scripts/socker_python.py
+    command: python3 ./scripts/socket_python.py
