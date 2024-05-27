@@ -11,7 +11,7 @@ def to_markdown(text):
     print(text)
 
 
-genai.configure(api_key='AIzaSyAKPxKVmVhuyKbdXVhdEIf43gTbuDhNxAk')
+genai.configure(api_key='TU API KEY')
 
 model = genai.GenerativeModel('gemini-1.5-flash')
 
