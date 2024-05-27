@@ -63,9 +63,9 @@ def command():
     
     action = request.args.get('action')
     if action:
-        if action == '5':  
+        if action == 'capturar':
             capture_command = True
-            return jsonify({"status": "Capturing screen for command 5"})
+            return jsonify({"status": "Capturing image"})
         elif action == 'cerrar':
             close_command = True
             return jsonify({"status": "Closing program"})
@@ -73,7 +73,6 @@ def command():
             return jsonify({"status": "Unknown action"})
     else:
         return jsonify({"status": "No action provided"}), 400
-
 
 if __name__ == "__main__":
     video_thread = threading.Thread(target=process_video)
