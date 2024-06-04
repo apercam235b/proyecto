@@ -1,0 +1,412 @@
+2024-06-04 18:08:34,692 - websockets.server - INFO - server listening on [::1]:8766
+2024-06-04 18:08:34,693 - websockets.server - INFO - server listening on 127.0.0.1:8766
+2024-06-04 18:08:34,693 - __main__ - INFO - Server started and listening on ws://localhost:8766
+2024-06-04 18:08:40,444 - websockets.server - INFO - connection open
+2024-06-04 18:08:40,446 - __main__ - INFO - Received: 1
+2024-06-04 18:08:40,446 - __main__ - INFO - Ejecutando script pizarra 1
+2024-06-04 18:08:40,451 - websockets.server - INFO - connection closed
+2024-06-04 18:08:45,882 - websockets.server - INFO - connection open
+2024-06-04 18:08:45,886 - __main__ - INFO - Received: 2
+2024-06-04 18:08:45,886 - __main__ - INFO - Ejecutando script pizarra 2
+2024-06-04 18:08:45,894 - websockets.server - INFO - connection closed
+2024-06-04 18:09:16,551 - websockets.server - INFO - connection open
+2024-06-04 18:09:16,553 - __main__ - INFO - Received: 1
+2024-06-04 18:09:16,553 - __main__ - INFO - Ejecutando script pizarra 1
+2024-06-04 18:09:16,557 - websockets.server - INFO - connection closed
+2024-06-04 18:09:19,556 - websockets.server - INFO - connection open
+2024-06-04 18:09:19,560 - __main__ - INFO - Received: 2
+2024-06-04 18:09:19,560 - __main__ - INFO - Ejecutando script pizarra 2
+2024-06-04 18:09:19,569 - websockets.server - INFO - connection closed
+2024-06-04 18:09:22,654 - websockets.server - INFO - connection open
+2024-06-04 18:09:22,656 - __main__ - INFO - Received: 1
+2024-06-04 18:09:22,656 - __main__ - INFO - Ejecutando script pizarra 1
+2024-06-04 18:09:22,660 - websockets.server - INFO - connection closed
+2024-06-04 18:10:56,781 - websockets.server - INFO - server listening on [::1]:8766
+2024-06-04 18:10:56,782 - websockets.server - INFO - server listening on 127.0.0.1:8766
+2024-06-04 18:10:56,782 - __main__ - INFO - Server started and listening on ws://localhost:8766
+2024-06-04 18:11:20,358 - websockets.server - INFO - connection open
+2024-06-04 18:11:20,360 - __main__ - INFO - Received: 2
+2024-06-04 18:11:20,360 - __main__ - INFO - Ejecutando script pizarra 2
+2024-06-04 18:11:21,365 - websockets.server - INFO - connection closed
+2024-06-04 18:11:23,560 - websockets.server - INFO - connection open
+2024-06-04 18:11:23,561 - __main__ - INFO - Received: 1
+2024-06-04 18:11:23,562 - __main__ - INFO - Ejecutando script pizarra 1
+2024-06-04 18:11:24,567 - websockets.server - INFO - connection closed
+2024-06-04 18:12:47,356 - websockets.server - INFO - server listening on 127.0.0.1:8766
+2024-06-04 18:12:47,357 - websockets.server - INFO - server listening on [::1]:8766
+2024-06-04 18:12:47,357 - __main__ - INFO - Server started and listening on ws://localhost:8766
+2024-06-04 18:12:51,965 - websockets.server - INFO - connection open
+2024-06-04 18:12:51,967 - __main__ - INFO - Received: 1
+2024-06-04 18:12:51,968 - __main__ - INFO - Ejecutando script pizarra 1
+2024-06-04 18:12:52,972 - websockets.server - INFO - connection closed
+2024-06-04 18:12:54,567 - websockets.server - INFO - connection open
+2024-06-04 18:12:54,569 - __main__ - INFO - Received: 2
+2024-06-04 18:12:54,569 - __main__ - INFO - Ejecutando script pizarra 2
+2024-06-04 18:12:55,579 - websockets.server - INFO - connection closed
+2024-06-04 18:12:59,969 - websockets.server - INFO - connection open
+2024-06-04 18:12:59,971 - __main__ - INFO - Received: 2
+2024-06-04 18:12:59,971 - __main__ - INFO - Ejecutando script pizarra 2
+2024-06-04 18:13:00,980 - websockets.server - INFO - connection closed
+2024-06-04 18:13:06,171 - websockets.server - INFO - connection open
+2024-06-04 18:13:06,173 - __main__ - INFO - Received: 2
+2024-06-04 18:13:06,173 - __main__ - INFO - Ejecutando script pizarra 2
+2024-06-04 18:13:07,181 - websockets.server - INFO - connection closed
+2024-06-04 18:13:26,274 - websockets.server - INFO - connection open
+2024-06-04 18:13:26,276 - __main__ - INFO - Received: 1
+2024-06-04 18:13:26,276 - __main__ - INFO - Ejecutando script pizarra 1
+2024-06-04 18:13:27,280 - websockets.server - INFO - connection closed
+2024-06-04 18:13:28,477 - websockets.server - INFO - connection open
+2024-06-04 18:13:28,479 - __main__ - INFO - Received: 2
+2024-06-04 18:13:28,479 - __main__ - INFO - Ejecutando script pizarra 2
+2024-06-04 18:13:29,483 - websockets.server - INFO - connection closed
+2024-06-04 18:14:42,548 - websockets.server - INFO - server listening on [::1]:8766
+2024-06-04 18:14:42,548 - websockets.server - INFO - server listening on 127.0.0.1:8766
+2024-06-04 18:14:42,549 - __main__ - INFO - Server started and listening on ws://localhost:8766
+2024-06-04 18:14:48,084 - websockets.server - INFO - connection open
+2024-06-04 18:14:48,086 - __main__ - INFO - Received: 1
+2024-06-04 18:14:48,086 - __main__ - INFO - Ejecutando script pizarra 1
+2024-06-04 18:14:49,095 - websockets.server - INFO - connection closed
+2024-06-04 18:14:50,483 - websockets.server - INFO - connection open
+2024-06-04 18:14:50,485 - __main__ - INFO - Received: 2
+2024-06-04 18:14:50,485 - __main__ - INFO - Ejecutando script pizarra 2
+2024-06-04 18:14:51,490 - websockets.server - INFO - connection closed
+2024-06-04 19:25:37,833 - websockets.server - INFO - server listening on [::1]:8766
+2024-06-04 19:25:37,833 - websockets.server - INFO - server listening on 127.0.0.1:8766
+2024-06-04 19:25:37,833 - __main__ - INFO - Server started and listening on ws://localhost:8766
+2024-06-04 19:26:05,341 - websockets.server - INFO - connection open
+2024-06-04 19:26:05,342 - __main__ - INFO - Received: 1
+2024-06-04 19:26:05,342 - __main__ - INFO - Ejecutando script pizarra 1
+2024-06-04 19:26:06,346 - websockets.server - INFO - connection closed
+2024-06-04 19:26:08,339 - websockets.server - INFO - connection open
+2024-06-04 19:26:08,341 - __main__ - INFO - Received: 2
+2024-06-04 19:26:08,341 - __main__ - INFO - Ejecutando script pizarra 2
+2024-06-04 19:26:09,345 - websockets.server - INFO - connection closed
+2024-06-04 21:37:23,470 - websockets.server - INFO - server listening on [::1]:8766
+2024-06-04 21:37:23,471 - websockets.server - INFO - server listening on 127.0.0.1:8766
+2024-06-04 21:37:23,471 - __main__ - INFO - Server started and listening on ws://localhost:8766
+2024-06-04 21:37:36,776 - websockets.server - INFO - connection open
+2024-06-04 21:37:36,781 - __main__ - INFO - Received: 6
+2024-06-04 21:37:36,781 - __main__ - INFO - Inicia la clase
+2024-06-04 21:37:36,798 - websockets.server - INFO - connection closed
+2024-06-04 21:37:39,450 - websockets.server - INFO - connection open
+2024-06-04 21:37:39,452 - __main__ - INFO - Received: 1
+2024-06-04 21:37:39,452 - __main__ - INFO - Ejecutando script pizarra 1
+2024-06-04 21:37:40,456 - websockets.server - INFO - connection closed
+2024-06-04 21:37:42,558 - websockets.server - INFO - connection open
+2024-06-04 21:37:42,563 - __main__ - INFO - Received: 2
+2024-06-04 21:37:42,563 - __main__ - INFO - Ejecutando script pizarra 2
+2024-06-04 21:37:43,572 - websockets.server - INFO - connection closed
+2024-06-04 21:37:46,657 - websockets.server - INFO - connection open
+2024-06-04 21:37:46,659 - __main__ - INFO - Received: 7
+2024-06-04 21:37:46,659 - __main__ - INFO - Finaliza la clase
+2024-06-04 21:37:46,661 - websockets.server - INFO - connection closed
+2024-06-04 21:40:31,681 - websockets.server - INFO - server listening on [::1]:8766
+2024-06-04 21:40:31,681 - websockets.server - INFO - server listening on 127.0.0.1:8766
+2024-06-04 21:40:31,681 - __main__ - INFO - Server started and listening on ws://localhost:8766
+2024-06-04 21:40:42,469 - websockets.server - INFO - connection open
+2024-06-04 21:40:42,472 - __main__ - INFO - Received: 6
+2024-06-04 21:40:42,472 - __main__ - INFO - Inicia la clase
+2024-06-04 21:40:47,663 - websockets.server - INFO - connection open
+2024-06-04 21:40:47,665 - __main__ - INFO - Received: 1
+2024-06-04 21:40:47,665 - __main__ - INFO - Ejecutando script pizarra 1
+2024-06-04 21:40:53,364 - websockets.server - INFO - connection open
+2024-06-04 21:40:53,366 - __main__ - INFO - Received: 2
+2024-06-04 21:40:53,366 - __main__ - INFO - Ejecutando script pizarra 2
+2024-06-04 21:40:57,066 - websockets.server - INFO - connection open
+2024-06-04 21:40:57,068 - __main__ - INFO - Received: 7
+2024-06-04 21:40:57,068 - __main__ - INFO - Finaliza la clase
+2024-06-04 21:40:57,073 - websockets.server - INFO - connection closed
+2024-06-04 21:41:02,970 - websockets.server - INFO - connection open
+2024-06-04 21:41:02,972 - __main__ - INFO - Received: 7
+2024-06-04 21:41:02,972 - __main__ - INFO - Finaliza la clase
+2024-06-04 21:41:02,977 - websockets.server - INFO - connection closed
+2024-06-04 21:41:43,099 - websockets.server - INFO - connection closed
+2024-06-04 21:41:43,099 - websockets.server - INFO - connection closed
+2024-06-04 21:41:43,100 - websockets.server - INFO - connection closed
+2024-06-04 21:41:57,087 - websockets.server - INFO - server listening on 127.0.0.1:8766
+2024-06-04 21:41:57,087 - websockets.server - INFO - server listening on [::1]:8766
+2024-06-04 21:41:57,088 - __main__ - INFO - Server started and listening on ws://localhost:8766
+2024-06-04 21:42:03,274 - websockets.server - INFO - connection open
+2024-06-04 21:42:03,276 - __main__ - INFO - Received: 6
+2024-06-04 21:42:03,276 - __main__ - INFO - Inicia la clase
+2024-06-04 21:42:05,383 - websockets.server - INFO - connection open
+2024-06-04 21:42:05,385 - __main__ - INFO - Received: 1
+2024-06-04 21:42:05,385 - __main__ - INFO - Ejecutando script pizarra 1
+2024-06-04 21:42:09,277 - websockets.server - INFO - connection open
+2024-06-04 21:42:09,279 - __main__ - INFO - Received: 7
+2024-06-04 21:42:09,279 - __main__ - INFO - Finaliza la clase
+2024-06-04 21:42:09,282 - websockets.server - INFO - connection closed
+2024-06-04 21:43:32,225 - websockets.server - INFO - connection closed
+2024-06-04 21:43:32,225 - websockets.server - INFO - connection closed
+2024-06-04 21:43:51,210 - websockets.server - INFO - server listening on [::1]:8766
+2024-06-04 21:43:51,211 - websockets.server - INFO - server listening on 127.0.0.1:8766
+2024-06-04 21:43:51,211 - __main__ - INFO - Server started and listening on ws://localhost:8766
+2024-06-04 21:44:02,192 - websockets.server - INFO - connection open
+2024-06-04 21:44:02,194 - __main__ - INFO - Received: 6
+2024-06-04 21:44:02,195 - __main__ - INFO - Inicia la clase
+2024-06-04 21:44:07,085 - websockets.server - INFO - connection open
+2024-06-04 21:44:07,086 - __main__ - INFO - Received: 1
+2024-06-04 21:44:07,087 - __main__ - INFO - Ejecutando script pizarra 1
+2024-06-04 21:44:09,987 - websockets.server - INFO - connection open
+2024-06-04 21:44:09,989 - __main__ - INFO - Received: 2
+2024-06-04 21:44:09,989 - __main__ - INFO - Ejecutando script pizarra 2
+2024-06-04 21:44:13,893 - websockets.server - INFO - connection open
+2024-06-04 21:44:13,895 - __main__ - INFO - Received: 7
+2024-06-04 21:44:13,896 - __main__ - INFO - Finaliza la clase
+2024-06-04 21:44:13,900 - websockets.server - INFO - connection closed
+2024-06-04 21:45:30,329 - websockets.server - INFO - connection closed
+2024-06-04 21:45:30,329 - websockets.server - INFO - connection closed
+2024-06-04 21:45:30,330 - websockets.server - INFO - connection closed
+2024-06-04 21:46:51,256 - websockets.server - INFO - server listening on [::1]:8766
+2024-06-04 21:46:51,257 - websockets.server - INFO - server listening on 127.0.0.1:8766
+2024-06-04 21:46:51,257 - __main__ - INFO - Server started and listening on ws://localhost:8766
+2024-06-04 21:47:02,705 - websockets.server - INFO - connection open
+2024-06-04 21:47:02,707 - __main__ - INFO - Received: 6
+2024-06-04 21:47:02,708 - __main__ - INFO - Inicia la clase
+2024-06-04 21:47:07,597 - websockets.server - INFO - connection open
+2024-06-04 21:47:07,599 - __main__ - INFO - Received: 1
+2024-06-04 21:47:07,599 - __main__ - INFO - Ejecutando script pizarra 1
+2024-06-04 21:47:15,804 - websockets.server - INFO - connection open
+2024-06-04 21:47:15,806 - __main__ - INFO - Received: 2
+2024-06-04 21:47:15,806 - __main__ - INFO - Ejecutando script pizarra 2
+2024-06-04 21:47:19,605 - websockets.server - INFO - connection open
+2024-06-04 21:47:19,607 - __main__ - INFO - Received: 7
+2024-06-04 21:47:19,608 - __main__ - INFO - Finaliza la clase
+2024-06-04 21:47:19,613 - websockets.server - INFO - connection closed
+2024-06-04 21:47:25,803 - websockets.server - INFO - connection open
+2024-06-04 21:47:25,805 - __main__ - INFO - Received: 6
+2024-06-04 21:47:25,805 - __main__ - INFO - Inicia la clase
+2024-06-04 21:47:30,506 - websockets.server - INFO - connection open
+2024-06-04 21:47:30,508 - __main__ - INFO - Received: 7
+2024-06-04 21:47:30,509 - __main__ - INFO - Finaliza la clase
+2024-06-04 21:47:30,514 - websockets.server - INFO - connection closed
+2024-06-04 21:47:35,086 - websockets.server - INFO - connection closed
+2024-06-04 21:47:35,087 - websockets.server - INFO - connection closed
+2024-06-04 21:47:35,087 - websockets.server - INFO - connection closed
+2024-06-04 21:47:35,087 - websockets.server - INFO - connection closed
+2024-06-04 21:49:29,375 - websockets.server - INFO - server listening on [::1]:8766
+2024-06-04 21:49:29,375 - websockets.server - INFO - server listening on 127.0.0.1:8766
+2024-06-04 21:49:29,375 - __main__ - INFO - Server started and listening on ws://localhost:8766
+2024-06-04 21:49:36,609 - websockets.server - INFO - connection open
+2024-06-04 21:49:36,610 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 14, in handle_client
+    while is_running:
+          ^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'is_running' where it is not associated with a value
+2024-06-04 21:49:36,612 - websockets.server - INFO - connection closed
+2024-06-04 21:49:51,324 - websockets.server - INFO - connection open
+2024-06-04 21:49:51,324 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 14, in handle_client
+    while is_running:
+          ^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'is_running' where it is not associated with a value
+2024-06-04 21:49:51,326 - websockets.server - INFO - connection closed
+2024-06-04 21:50:15,925 - websockets.server - INFO - connection open
+2024-06-04 21:50:15,926 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 14, in handle_client
+    while is_running:
+          ^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'is_running' where it is not associated with a value
+2024-06-04 21:50:15,928 - websockets.server - INFO - connection closed
+2024-06-04 21:51:32,664 - websockets.server - INFO - server listening on [::1]:8766
+2024-06-04 21:51:32,664 - websockets.server - INFO - server listening on 127.0.0.1:8766
+2024-06-04 21:51:32,664 - __main__ - INFO - Server started and listening on ws://localhost:8766
+2024-06-04 21:51:41,628 - websockets.server - INFO - connection open
+2024-06-04 21:51:41,631 - __main__ - INFO - Received: 6
+2024-06-04 21:51:41,631 - __main__ - INFO - Inicia la clase
+2024-06-04 21:51:41,638 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 14, in handle_client
+    message = await websocket.recv()  # Wait for a message
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-04 21:51:41,641 - websockets.server - INFO - connection closed
+2024-06-04 21:51:45,225 - websockets.server - INFO - connection open
+2024-06-04 21:51:45,227 - __main__ - INFO - Received: 1
+2024-06-04 21:51:45,227 - __main__ - INFO - Ejecutando script pizarra 1
+2024-06-04 21:51:46,231 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 14, in handle_client
+    message = await websocket.recv()  # Wait for a message
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-04 21:51:46,233 - websockets.server - INFO - connection closed
+2024-06-04 21:51:50,026 - websockets.server - INFO - connection open
+2024-06-04 21:51:50,029 - __main__ - INFO - Received: 7
+2024-06-04 21:51:50,029 - __main__ - INFO - Finaliza la clase
+2024-06-04 21:51:50,034 - websockets.server - INFO - connection closed
+2024-06-04 21:51:56,631 - websockets.server - INFO - connection open
+2024-06-04 21:51:56,632 - __main__ - INFO - Received: 7
+2024-06-04 21:51:56,632 - __main__ - INFO - Finaliza la clase
+2024-06-04 21:51:56,636 - websockets.server - INFO - connection closed
+2024-06-04 21:52:03,729 - websockets.server - INFO - connection open
+2024-06-04 21:52:03,731 - __main__ - INFO - Received: 1
+2024-06-04 21:52:03,731 - __main__ - INFO - Ejecutando script pizarra 1
+2024-06-04 21:52:04,737 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 14, in handle_client
+    message = await websocket.recv()  # Wait for a message
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-04 21:52:04,739 - websockets.server - INFO - connection closed
+2024-06-04 21:52:06,428 - websockets.server - INFO - connection open
+2024-06-04 21:52:06,430 - __main__ - INFO - Received: 2
+2024-06-04 21:52:06,430 - __main__ - INFO - Ejecutando script pizarra 2
+2024-06-04 21:52:07,434 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 14, in handle_client
+    message = await websocket.recv()  # Wait for a message
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-04 21:52:07,436 - websockets.server - INFO - connection closed
+2024-06-04 21:53:38,442 - websockets.server - INFO - server listening on 127.0.0.1:8766
+2024-06-04 21:53:38,442 - websockets.server - INFO - server listening on [::1]:8766
+2024-06-04 21:53:38,443 - __main__ - INFO - Server started and listening on ws://localhost:8766
+2024-06-04 21:53:44,733 - websockets.server - INFO - connection open
+2024-06-04 21:53:44,735 - __main__ - INFO - Recibido: 6
+2024-06-04 21:53:44,735 - __main__ - INFO - Iniciando la clase
+2024-06-04 21:53:44,742 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 14, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-04 21:53:44,746 - websockets.server - INFO - connection closed
+2024-06-04 21:53:49,934 - websockets.server - INFO - connection open
+2024-06-04 21:53:49,936 - __main__ - INFO - Recibido: 1
+2024-06-04 21:53:49,936 - __main__ - INFO - Ejecutando script de pizarra 1
+2024-06-04 21:53:50,941 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 14, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-04 21:53:50,942 - websockets.server - INFO - connection closed
+2024-06-04 21:53:53,137 - websockets.server - INFO - connection open
+2024-06-04 21:53:53,139 - __main__ - INFO - Recibido: 1
+2024-06-04 21:53:53,139 - __main__ - INFO - Ejecutando script de pizarra 1
+2024-06-04 21:53:54,143 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 14, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-04 21:53:54,145 - websockets.server - INFO - connection closed
+2024-06-04 21:53:56,138 - websockets.server - INFO - connection open
+2024-06-04 21:53:56,140 - __main__ - INFO - Recibido: 2
+2024-06-04 21:53:56,140 - __main__ - INFO - Ejecutando script de pizarra 2
+2024-06-04 21:53:57,144 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 14, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-04 21:53:57,145 - websockets.server - INFO - connection closed
+2024-06-04 21:54:00,842 - websockets.server - INFO - connection open
+2024-06-04 21:54:00,844 - __main__ - INFO - Recibido: 7
+2024-06-04 21:54:00,844 - __main__ - INFO - Finalizando la clase
+2024-06-04 21:54:00,847 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 47, in handle_client
+    await websocket.send(response)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 635, in send
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 944, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: sent 1000 (OK); then received 1000 (OK)
+2024-06-04 21:54:00,849 - websockets.server - INFO - connection closed

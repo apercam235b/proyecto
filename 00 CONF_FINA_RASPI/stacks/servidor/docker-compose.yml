@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  websocket:
+    container_name: websocket
+    build: .
+    network_mode: host
+    volumes:
+      - ./scripts:/scripts
+    command: python3 ./scripts/socket_python.py
+
+  filebrowser:
+    image: hurlenko/filebrowser
+    container_name: filebrowser
+    ports:
+      - 8080:8080
+    volumes:
+      - /datos:/data
+      - ./config:/config
+    #Usuario admin Pass admin
+    environment:
+      - FB_BASEURL=/filebrowser
+      - UID=1000
+      - GID=1000
+      - TZ=Europe/Madrid
+    restart: always
