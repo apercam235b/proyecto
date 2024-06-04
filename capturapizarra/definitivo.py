@@ -38,7 +38,6 @@ def process_video():
         for contour in contours:
             approx = cv2.approxPolyDP(contour, 0.02 * cv2.arcLength(contour, True), True)
             if len(approx) == 4:
-                cv2.drawContours(frame, [approx], -1, (0, 255, 0), 2)
                 rect_img = capture_rectangle(frame, approx)
                 rects.append(rect_img)
 
@@ -49,13 +48,10 @@ def process_video():
                 print(f'Imagen guardada: {filename}')
             capture_command = False
         
-        cv2.imshow('Rectangles Detection', frame)
-        
-        if close_command or (cv2.waitKey(1) & 0xFF == ord('q')):
+        if close_command:
             break
 
     cap.release()
-    cv2.destroyAllWindows()
 
 @app.route('/command', methods=['GET'])
 def command():
