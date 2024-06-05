@@ -16,10 +16,17 @@ def extract_text_from_image(image):
     text = ''
     for line in result:
         for word in line:
-            text += word[1] + ' '
+            # Acceder al texto de la palabra y agregarlo al texto completo
+            text += word[1][0] + ' '  # La palabra se encuentra en el primer elemento de la tupla
         text += '\n'
 
     return text
+
+
+
+
+
+    
 
 def capture_and_extract_text():
     # Capturar imagen desde la cámara
