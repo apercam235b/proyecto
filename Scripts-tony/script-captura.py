@@ -31,7 +31,7 @@ def process_video():
         rects = []
 
         start_time = time.time()
-        while time.time() - start_time < 5:
+        while time.time() - start_time < 15:
             for contour in contours:
                 approx = cv2.approxPolyDP(contour, 0.02 * cv2.arcLength(contour, True), True)
                 if len(approx) == 4:

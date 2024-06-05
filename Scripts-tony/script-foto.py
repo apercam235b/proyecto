@@ -1,7 +1,7 @@
 import cv2
 from datetime import datetime
 
-def capture_from_camera():
+def captura_camara():
     cap = cv2.VideoCapture(0)  # 0 indica la cámara predeterminada
     if not cap.isOpened():
         print("Error: No se puede acceder a la cámara")
@@ -20,4 +20,4 @@ def capture_from_camera():
     cap.release()
 
 if __name__ == "__main__":
-    capture_from_camera()
+    captura_camara()

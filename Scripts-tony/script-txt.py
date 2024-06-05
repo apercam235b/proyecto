@@ -49,4 +49,3 @@ def capture_and_extract_text():
 
 if __name__ == "__main__":
     capture_and_extract_text()
-
