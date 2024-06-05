@@ -6,7 +6,7 @@ from paddleocr import PaddleOCR
 from datetime import datetime
 
 # Configuración de PaddleOCR
-ocr = PaddleOCR(use_angle_cls=True, lang='en')
+ocr = PaddleOCR(use_angle_cls=True, lang='es')
 
 def extract_text_from_image(image):
     # Realizar OCR en la imagen
