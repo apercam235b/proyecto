@@ -1,0 +1,25 @@
+version: "3.8"
+networks:
+  LAN:
+    external: true
+services:
+  dockge:
+    image: louislam/dockge:1
+    container_name: dockge
+    restart: unless-stopped
+    ports:
+      - 5001:5001
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./data:/app/data
+      - /opt/stacks:/opt/stacks
+    environment:
+      # Tell Dockge where to find the stacks
+      - DOCKGE_STACKS_DIR=/opt/stacks
+    networks:
+      - LAN
+#    labels:
+#      - traefik.enable=true
+#      - traefik.http.routers.dockge.rule=Host(`dockge.alvaro.civica.lab`)
+#      - traefik.http.routers.dockge.entrypoints=http
+#      - traefik.docker.network=web

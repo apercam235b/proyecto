@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  cliente:
+    container_name: cliente
+    build: .
+    network_mode: host
+    volumes:
+      - ./scripts:/scripts
+      - /datos:/datos
+    command: python3 ./scripts/socket_cliente.py

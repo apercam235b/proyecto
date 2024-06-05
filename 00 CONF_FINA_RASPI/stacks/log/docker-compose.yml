@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: app
+    build: .
+    networks:
+      - LAN
+      - inter
+    ports:
+      - "5080:8080"
+    volumes:
+      - ./scripts:/scripts
+    command: python3 /scripts/app.py
+    environment:
+      MYSQL_HOST: dblog # dns resolves actual address
+      MYSQL_DATABASE: log
+      MYSQL_PORT: 3306
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: departamento
+    restart: always
+
+  dblog:
+    image: mariadb
+    ports:
+      - "3306:3306"
+    depends_on:
+      - app
+    container_name: dblog
+    environment:
+      MYSQL_DATABASE: log
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: departamento
+      MYSQL_ROOT_PASSWORD: departamento
+      # Other ------
+      TZ: Europe/Berlin
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+      - ./mysql_init:/docker-entrypoint-initdb.d # create tables at container creation
+    networks:
+      - LAN
+
+networks:
+  LAN:
+    external: true
+  inter:
+    external: false
+
