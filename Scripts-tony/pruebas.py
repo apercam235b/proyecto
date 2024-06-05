@@ -52,6 +52,7 @@ class VideoRecorder:
 if __name__ == "__main__":
     recorder = VideoRecorder()
     recorder.iniciar_grabacion()
+    recorder.audio_callback()
     # Grabar durante 10 segundos (puedes ajustar este valor según tus necesidades)
-    cv2.waitKey(10000)
+    cv2.waitKey(5000)
     recorder.parar_grabacion()
