@@ -16,6 +16,19 @@ class VideoRecorder:
         self.recording = True
         print("Grabación iniciada")
 
+    def captura_camara():
+        ret, frame = cap.read()
+        if ret:
+            now = datetime.now()
+            fecha_hora = now.strftime("%Y-%m-%d_%H-%M-%S")
+            filename = f'foto_{fecha_hora}.png'
+            cv2.imwrite(filename, frame)
+            print(f'Imagen guardada: {filename}')
+        else:
+            print("Error: No se puede recibir el cuadro (stream end?). Saliendo ...")
+        
+        cap.release()
+
     def parar_grabacion(self):
         self.recording = False
         self.cap.release()
@@ -37,5 +50,5 @@ if __name__ == "__main__":
     recorder.iniciar_grabacion()
     recorder.record()
     # Grabar durante 10 segundos (puedes ajustar este valor según tus necesidades)
-    cv2.waitKey(10000)
+    cv2.waitKey(1)
     recorder.parar_grabacion()
