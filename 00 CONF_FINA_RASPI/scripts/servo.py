@@ -21,6 +21,8 @@ def posicion1():
     brazo.ChangeDutyCycle(12.5)
     base.ChangeDutyCycle(2.5)
     time.sleep(1)
+    brazo.ChangeDutyCycle(0)
+    base.ChangeDutyCycle(0)
 #    GPIO.cleanup()
 
 def posicion2():
@@ -28,11 +30,13 @@ def posicion2():
     brazo.ChangeDutyCycle(12.5)
     base.ChangeDutyCycle(12.5)
     time.sleep(1)
+    brazo.ChangeDutyCycle(0)
+    base.ChangeDutyCycle(0)
 #    GPIO.cleanup()
 
 def detener_servo():
-    brazo.ChangeDutyCycle(1)
-    base.ChangeDutyCycle(1)
+    brazo.ChangeDutyCycle(0)
+    base.ChangeDutyCycle(0)
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:

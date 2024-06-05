@@ -410,3 +410,889 @@ Traceback (most recent call last):
     raise self.connection_closed_exc()
 websockets.exceptions.ConnectionClosedOK: sent 1000 (OK); then received 1000 (OK)
 2024-06-04 21:54:00,849 - websockets.server - INFO - connection closed
+2024-06-04 22:17:25,071 - websockets.server - INFO - server listening on 127.0.0.1:8766
+2024-06-04 22:17:25,071 - websockets.server - INFO - server listening on [::1]:8766
+2024-06-04 22:17:25,071 - __main__ - INFO - Server started and listening on ws://localhost:8766
+2024-06-04 22:17:38,372 - websockets.server - INFO - connection open
+2024-06-04 22:17:38,373 - __main__ - INFO - Recibido: 1
+2024-06-04 22:17:38,374 - __main__ - INFO - Ejecutando script de pizarra 1
+2024-06-04 22:17:39,378 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 14, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-04 22:17:39,381 - websockets.server - INFO - connection closed
+2024-06-04 22:17:41,381 - websockets.server - INFO - connection open
+2024-06-04 22:17:41,382 - __main__ - INFO - Recibido: 2
+2024-06-04 22:17:41,383 - __main__ - INFO - Ejecutando script de pizarra 2
+2024-06-04 22:17:42,387 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 14, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-04 22:17:42,388 - websockets.server - INFO - connection closed
+2024-06-04 22:17:44,974 - websockets.server - INFO - connection open
+2024-06-04 22:17:44,976 - __main__ - INFO - Recibido: 1
+2024-06-04 22:17:44,976 - __main__ - INFO - Ejecutando script de pizarra 1
+2024-06-04 22:17:45,982 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 14, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-04 22:17:45,984 - websockets.server - INFO - connection closed
+2024-06-05 17:21:55,311 - websockets.server - INFO - server listening on 127.0.0.1:8766
+2024-06-05 17:21:55,312 - websockets.server - INFO - server listening on [::1]:8766
+2024-06-05 17:21:55,312 - __main__ - INFO - Server started and listening on ws://localhost:8766
+2024-06-05 17:22:07,912 - websockets.server - INFO - connection open
+2024-06-05 17:22:07,914 - __main__ - INFO - Recibido: 1
+2024-06-05 17:22:07,914 - __main__ - INFO - Ejecutando script de pizarra 1
+2024-06-05 17:22:08,920 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 14, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 17:22:08,929 - websockets.server - INFO - connection closed
+2024-06-05 17:22:10,803 - websockets.server - INFO - connection open
+2024-06-05 17:22:10,805 - __main__ - INFO - Recibido: 2
+2024-06-05 17:22:10,805 - __main__ - INFO - Ejecutando script de pizarra 2
+2024-06-05 17:22:11,810 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 14, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 17:22:11,811 - websockets.server - INFO - connection closed
+2024-06-05 17:22:14,002 - websockets.server - INFO - connection open
+2024-06-05 17:22:14,004 - __main__ - INFO - Recibido: 1
+2024-06-05 17:22:14,004 - __main__ - INFO - Ejecutando script de pizarra 1
+2024-06-05 17:22:15,008 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 14, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 17:22:15,010 - websockets.server - INFO - connection closed
+2024-06-05 19:34:46,198 - websockets.server - INFO - server listening on 127.0.0.1:8766
+2024-06-05 19:34:46,198 - websockets.server - INFO - server listening on [::1]:8766
+2024-06-05 19:34:46,198 - __main__ - INFO - Server started and listening on ws://localhost:8766
+2024-06-05 19:38:10,896 - websockets.server - INFO - server listening on 127.0.0.1:8766
+2024-06-05 19:38:10,897 - websockets.server - INFO - server listening on [::1]:8766
+2024-06-05 19:38:10,897 - __main__ - INFO - Server started and listening on ws://localhost:8766
+2024-06-05 19:40:42,218 - websockets.server - INFO - connection open
+2024-06-05 19:40:42,220 - __main__ - INFO - Recibido: 6
+2024-06-05 19:40:42,220 - __main__ - INFO - Iniciando la clase
+2024-06-05 19:40:42,246 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 19:40:42,249 - websockets.server - INFO - connection closed
+2024-06-05 19:40:50,413 - websockets.server - INFO - connection open
+2024-06-05 19:40:50,415 - __main__ - INFO - Recibido: 6
+2024-06-05 19:40:50,415 - __main__ - INFO - Iniciando la clase
+2024-06-05 19:40:50,430 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 19:40:50,432 - websockets.server - INFO - connection closed
+2024-06-05 19:43:33,816 - websockets.server - INFO - connection open
+2024-06-05 19:43:33,818 - __main__ - INFO - Recibido: 6
+2024-06-05 19:43:33,818 - __main__ - INFO - Iniciando la clase
+2024-06-05 19:43:33,848 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 19:43:33,850 - websockets.server - INFO - connection closed
+2024-06-05 19:46:01,732 - websockets.server - INFO - connection open
+2024-06-05 19:46:01,735 - __main__ - INFO - Recibido: 6
+2024-06-05 19:46:01,736 - __main__ - INFO - Iniciando la clase
+2024-06-05 19:46:01,743 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 704, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 399, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.11/http/client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.11/http/client.py", line 975, in send
+    self.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f7c928590>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 788, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5080): Max retries exceeded with url: /log (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f7c928590>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 45, in handle_client
+    requests.get(url, json=data)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5080): Max retries exceeded with url: /log (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f7c928590>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-06-05 19:46:01,768 - websockets.server - INFO - connection closed
+2024-06-05 19:48:49,907 - websockets.server - INFO - connection open
+2024-06-05 19:48:49,909 - __main__ - INFO - Recibido: 6
+2024-06-05 19:48:49,909 - __main__ - INFO - Iniciando la clase
+2024-06-05 19:48:49,940 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 19:48:49,941 - websockets.server - INFO - connection closed
+2024-06-05 19:50:04,800 - websockets.server - INFO - connection open
+2024-06-05 19:50:04,802 - __main__ - INFO - Recibido: 1
+2024-06-05 19:50:04,802 - __main__ - INFO - Ejecutando script de pizarra 1
+2024-06-05 19:50:05,806 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 19:50:05,807 - websockets.server - INFO - connection closed
+2024-06-05 19:50:07,102 - websockets.server - INFO - connection open
+2024-06-05 19:50:07,104 - __main__ - INFO - Recibido: 6
+2024-06-05 19:50:07,104 - __main__ - INFO - Iniciando la clase
+2024-06-05 19:50:07,121 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 19:50:07,123 - websockets.server - INFO - connection closed
+2024-06-05 19:50:57,509 - websockets.server - INFO - connection open
+2024-06-05 19:50:57,511 - __main__ - INFO - Recibido: 6
+2024-06-05 19:50:57,511 - __main__ - INFO - Iniciando la clase
+2024-06-05 19:50:57,526 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 19:50:57,528 - websockets.server - INFO - connection closed
+2024-06-05 19:51:01,708 - websockets.server - INFO - connection open
+2024-06-05 19:51:01,710 - __main__ - INFO - Recibido: 1
+2024-06-05 19:51:01,710 - __main__ - INFO - Ejecutando script de pizarra 1
+2024-06-05 19:51:02,714 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 19:51:02,716 - websockets.server - INFO - connection closed
+2024-06-05 19:52:49,415 - websockets.server - INFO - connection open
+2024-06-05 19:52:49,416 - __main__ - INFO - Recibido: 6
+2024-06-05 19:52:49,416 - __main__ - INFO - Iniciando la clase
+2024-06-05 19:52:49,431 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 19:52:49,433 - websockets.server - INFO - connection closed
+2024-06-05 19:53:47,522 - websockets.server - INFO - connection open
+2024-06-05 19:53:47,525 - __main__ - INFO - Recibido: 6
+2024-06-05 19:53:47,526 - __main__ - INFO - Iniciando la clase
+2024-06-05 19:53:47,586 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 19:53:47,589 - websockets.server - INFO - connection closed
+2024-06-05 19:54:17,326 - websockets.server - INFO - connection open
+2024-06-05 19:54:17,331 - __main__ - INFO - Recibido: 6
+2024-06-05 19:54:17,331 - __main__ - INFO - Iniciando la clase
+2024-06-05 19:54:17,397 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 19:54:17,400 - websockets.server - INFO - connection closed
+2024-06-05 19:56:18,212 - websockets.server - INFO - server listening on [::1]:8766
+2024-06-05 19:56:18,212 - websockets.server - INFO - server listening on 127.0.0.1:8766
+2024-06-05 19:56:18,212 - __main__ - INFO - Server started and listening on ws://localhost:8766
+2024-06-05 19:56:26,026 - websockets.server - INFO - connection open
+2024-06-05 19:56:26,028 - __main__ - INFO - Recibido: 1
+2024-06-05 19:56:26,028 - __main__ - INFO - Ejecutando script de pizarra 1
+2024-06-05 19:56:27,033 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 19:56:27,036 - websockets.server - INFO - connection closed
+2024-06-05 19:56:32,830 - websockets.server - INFO - connection open
+2024-06-05 19:56:32,832 - __main__ - INFO - Recibido: 2
+2024-06-05 19:56:32,832 - __main__ - INFO - Ejecutando script de pizarra 2
+2024-06-05 19:56:33,836 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 19:56:33,838 - websockets.server - INFO - connection closed
+2024-06-05 19:56:38,732 - websockets.server - INFO - connection open
+2024-06-05 19:56:38,733 - __main__ - INFO - Recibido: 1
+2024-06-05 19:56:38,734 - __main__ - INFO - Ejecutando script de pizarra 1
+2024-06-05 19:56:39,738 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 19:56:39,739 - websockets.server - INFO - connection closed
+2024-06-05 19:57:32,344 - websockets.server - INFO - connection open
+2024-06-05 19:57:32,346 - __main__ - INFO - Recibido: 6
+2024-06-05 19:57:32,347 - __main__ - INFO - Iniciando la clase
+2024-06-05 19:57:32,387 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 19:57:32,390 - websockets.server - INFO - connection closed
+2024-06-05 19:58:20,846 - websockets.server - INFO - connection open
+2024-06-05 19:58:20,848 - __main__ - INFO - Recibido: 6
+2024-06-05 19:58:20,848 - __main__ - INFO - Iniciando la clase
+2024-06-05 19:58:20,877 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 19:58:20,879 - websockets.server - INFO - connection closed
+2024-06-05 20:00:23,051 - websockets.server - INFO - connection open
+2024-06-05 20:00:23,054 - __main__ - INFO - Recibido: 6
+2024-06-05 20:00:23,054 - __main__ - INFO - Iniciando la clase
+2024-06-05 20:00:23,083 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 20:00:23,084 - websockets.server - INFO - connection closed
+2024-06-05 20:00:38,251 - websockets.server - INFO - connection open
+2024-06-05 20:00:38,252 - __main__ - INFO - Recibido: 7
+2024-06-05 20:00:38,253 - __main__ - INFO - Finalizando la clase
+2024-06-05 20:00:38,256 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 20:00:38,258 - websockets.server - INFO - connection closed
+2024-06-05 20:01:12,031 - websockets.server - INFO - server listening on [::1]:8766
+2024-06-05 20:01:12,031 - websockets.server - INFO - server listening on 127.0.0.1:8766
+2024-06-05 20:01:12,031 - __main__ - INFO - Server started and listening on ws://localhost:8766
+2024-06-05 20:01:25,964 - websockets.server - INFO - connection open
+2024-06-05 20:01:25,966 - __main__ - INFO - Recibido: 6
+2024-06-05 20:01:25,966 - __main__ - INFO - Iniciando la clase
+2024-06-05 20:01:26,000 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 20:01:26,003 - websockets.server - INFO - connection closed
+2024-06-05 20:02:11,963 - websockets.server - INFO - connection open
+2024-06-05 20:02:11,965 - __main__ - INFO - Recibido: 6
+2024-06-05 20:02:11,965 - __main__ - INFO - Iniciando la clase
+2024-06-05 20:02:11,981 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 20:02:11,983 - websockets.server - INFO - connection closed
+2024-06-05 20:05:41,369 - websockets.server - INFO - connection open
+2024-06-05 20:05:41,370 - __main__ - INFO - Recibido: 6
+2024-06-05 20:05:41,370 - __main__ - INFO - Iniciando la clase
+2024-06-05 20:05:41,394 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 20:05:41,396 - websockets.server - INFO - connection closed
+2024-06-05 20:06:50,773 - websockets.server - INFO - connection open
+2024-06-05 20:06:50,775 - __main__ - INFO - Recibido: 6
+2024-06-05 20:06:50,775 - __main__ - INFO - Iniciando la clase
+2024-06-05 20:06:50,797 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 20:06:50,799 - websockets.server - INFO - connection closed
+2024-06-05 20:07:04,878 - websockets.server - INFO - connection open
+2024-06-05 20:07:04,879 - __main__ - INFO - Recibido: 1
+2024-06-05 20:07:04,879 - __main__ - INFO - Ejecutando script de pizarra 1
+2024-06-05 20:07:05,883 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 20:07:05,885 - websockets.server - INFO - connection closed
+2024-06-05 20:25:41,192 - websockets.server - INFO - connection open
+2024-06-05 20:25:41,196 - __main__ - INFO - Recibido: 6
+2024-06-05 20:25:41,196 - __main__ - INFO - Iniciando la clase
+2024-06-05 20:25:41,285 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 20:25:41,286 - websockets.server - INFO - connection closed
+2024-06-05 20:29:05,598 - websockets.server - INFO - connection open
+2024-06-05 20:29:05,602 - __main__ - INFO - Recibido: 6
+2024-06-05 20:29:05,602 - __main__ - INFO - Iniciando la clase
+2024-06-05 20:29:05,665 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 20:29:05,669 - websockets.server - INFO - connection closed
+2024-06-05 20:29:26,496 - websockets.server - INFO - connection open
+2024-06-05 20:29:26,498 - __main__ - INFO - Recibido: 6
+2024-06-05 20:29:26,498 - __main__ - INFO - Iniciando la clase
+2024-06-05 20:29:26,524 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 20:29:26,525 - websockets.server - INFO - connection closed
+2024-06-05 20:29:40,315 - websockets.server - INFO - connection open
+2024-06-05 20:29:40,317 - __main__ - INFO - Recibido: 6
+2024-06-05 20:29:40,317 - __main__ - INFO - Iniciando la clase
+2024-06-05 20:29:40,339 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 20:29:40,340 - websockets.server - INFO - connection closed
+2024-06-05 20:35:48,492 - websockets.server - INFO - server listening on 127.0.0.1:8766
+2024-06-05 20:35:48,492 - websockets.server - INFO - server listening on [::1]:8766
+2024-06-05 20:35:48,492 - __main__ - INFO - Server started and listening on ws://localhost:8766
+2024-06-05 20:36:56,412 - websockets.server - INFO - connection open
+2024-06-05 20:36:56,413 - __main__ - INFO - Recibido: 6
+2024-06-05 20:36:56,414 - __main__ - INFO - Iniciando la clase
+2024-06-05 20:36:56,440 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 20:36:56,444 - websockets.server - INFO - connection closed
+2024-06-05 20:37:00,413 - websockets.server - INFO - connection open
+2024-06-05 20:37:00,415 - __main__ - INFO - Recibido: 1
+2024-06-05 20:37:00,415 - __main__ - INFO - Moviendo servo a pizarra 1
+2024-06-05 20:37:00,435 - __main__ - INFO - Ejecutando script de pizarra 1
+2024-06-05 20:37:01,439 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 20:37:01,441 - websockets.server - INFO - connection closed
+2024-06-05 20:37:04,017 - websockets.server - INFO - connection open
+2024-06-05 20:37:04,019 - __main__ - INFO - Recibido: 2
+2024-06-05 20:37:04,019 - __main__ - INFO - Moviendo servo a pizarra 2
+2024-06-05 20:37:04,033 - __main__ - INFO - Ejecutando script de pizarra 2
+2024-06-05 20:37:05,037 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 20:37:05,038 - websockets.server - INFO - connection closed
+2024-06-05 20:37:10,023 - websockets.server - INFO - connection open
+2024-06-05 20:37:10,025 - __main__ - INFO - Recibido: 3
+2024-06-05 20:37:10,025 - __main__ - INFO - Se ha iniciado la grabacion
+2024-06-05 20:37:10,044 - __main__ - INFO - Ejecutando script para empezar grabación
+2024-06-05 20:37:10,049 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 20:37:10,051 - websockets.server - INFO - connection closed
+2024-06-05 20:37:14,025 - websockets.server - INFO - connection open
+2024-06-05 20:37:14,029 - __main__ - INFO - Recibido: 4
+2024-06-05 20:37:14,030 - __main__ - INFO - Se ha detenido la grabacion
+2024-06-05 20:37:14,053 - __main__ - INFO - Deteniendo la grabación
+2024-06-05 20:37:14,060 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 20:37:14,062 - websockets.server - INFO - connection closed
+2024-06-05 20:37:16,821 - websockets.server - INFO - connection open
+2024-06-05 20:37:16,823 - __main__ - INFO - Recibido: 5
+2024-06-05 20:37:16,823 - __main__ - INFO - Se ha tomado una foto
+2024-06-05 20:37:16,848 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 20:37:16,849 - websockets.server - INFO - connection closed
+2024-06-05 20:37:21,823 - websockets.server - INFO - connection open
+2024-06-05 20:37:21,825 - __main__ - INFO - Recibido: 7
+2024-06-05 20:37:21,825 - __main__ - INFO - Termina la clase
+2024-06-05 20:37:21,839 - __main__ - INFO - Finalizando la clase
+2024-06-05 20:37:21,843 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 20:37:21,845 - websockets.server - INFO - connection closed
+2024-06-05 20:37:26,231 - websockets.server - INFO - connection open
+2024-06-05 20:37:26,235 - __main__ - INFO - Recibido: 1
+2024-06-05 20:37:26,235 - __main__ - INFO - Moviendo servo a pizarra 1
+2024-06-05 20:37:26,261 - __main__ - INFO - Ejecutando script de pizarra 1
+2024-06-05 20:37:27,267 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 236, in handler
+    await self.ws_handler(self)
+  File "/usr/lib/python3/dist-packages/websockets/legacy/server.py", line 1175, in _ws_handler
+    return await cast(
+           ^^^^^^^^^^^
+  File "/opt/scripts/socket_cliente.py", line 17, in handle_client
+    message = await websocket.recv()  # Espera un mensaje
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/usr/lib/python3/dist-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-06-05 20:37:27,268 - websockets.server - INFO - connection closed
