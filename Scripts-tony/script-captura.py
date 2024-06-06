@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 from datetime import datetime
 import time
-
+import argparse
 def capture_rectangle(frame, approx):
     x, y, w, h = cv2.boundingRect(approx)
     rect_img = frame[y:y+h, x:x+w]
@@ -51,4 +51,8 @@ def process_video(ruta):
 
     cap.release()
 
-
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Captura una imagen de la cámara y la guarda en la ruta especificada.")
+    parser.add_argument("ruta", type=str, help="Ruta donde se guardará la imagen.")
+    args = parser.parse_args()
+    process_video(args.ruta)
