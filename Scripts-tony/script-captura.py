@@ -8,7 +8,7 @@ def capture_rectangle(frame, approx):
     rect_img = frame[y:y+h, x:x+w]
     return rect_img
 
-def process_video():
+def process_video(ruta):
     cap = cv2.VideoCapture(0)
     if not cap.isOpened():
         print("Error: No se puede acceder a la cámara")
@@ -45,11 +45,11 @@ def process_video():
     for i, rect_img in enumerate(rects):
         now = datetime.now()
         fecha_hora = now.strftime("%Y-%m-%d_%H-%M-%S")
-        filename = f'captura_{fecha_hora}.png'
+        filename = f'{ruta}/captura_{fecha_hora}.png'
         cv2.imwrite(filename, rect_img)
         print(f'Imagen guardada: {filename}')
 
     cap.release()
 
 if __name__ == "__main__":
-    process_video()
+    process_video('capturas')
