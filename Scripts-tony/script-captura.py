@@ -51,5 +51,4 @@ def process_video(ruta):
 
     cap.release()
 
-if __name__ == "__main__":
-    process_video('capturas')
+
