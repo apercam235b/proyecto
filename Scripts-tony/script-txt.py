@@ -1,9 +1,9 @@
 import cv2
 import sys
 import os
-sys.path.append(os.path.abspath('PaddleOCR'))
 from paddleocr import PaddleOCR
 from datetime import datetime
+import time
 
 # Configuración de PaddleOCR
 ocr = PaddleOCR(use_angle_cls=True, lang='es')
@@ -12,17 +12,24 @@ def extract_text_from_image(image):
     # Realizar OCR en la imagen
     result = ocr.ocr(image, cls=True)
 
+    # Verificar si el resultado no es None
+    if result is None:
+        print("Error: No se pudo realizar OCR en la imagen.")
+        return ""
+
     # Obtener texto de los resultados de OCR
     text = ''
     for line in result:
+        if line is None:
+            continue
         for word in line:
+            if word is None:
+                continue
             # Acceder al texto de la palabra y agregarlo al texto completo
             text += word[1][0] + ' '  # La palabra se encuentra en el primer elemento de la tupla
         text += '\n'
 
     return text
-
-
 
 def capture_and_extract_text():
     # Capturar imagen desde la cámara
@@ -30,6 +37,9 @@ def capture_and_extract_text():
     if not cap.isOpened():
         print("Error: No se puede acceder a la cámara")
         return
+
+    # Esperar 2 segundos para permitir que la cámara se enfoque
+    time.sleep(2)
 
     ret, frame = cap.read()
     if not ret:
