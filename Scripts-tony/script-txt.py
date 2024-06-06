@@ -24,10 +24,6 @@ def extract_text_from_image(image):
 
 
 
-
-
-    
-
 def capture_and_extract_text():
     # Capturar imagen desde la cámara
     cap = cv2.VideoCapture(0)
