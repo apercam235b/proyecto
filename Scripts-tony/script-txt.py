@@ -4,9 +4,9 @@ import os
 from paddleocr import PaddleOCR
 from datetime import datetime
 import time
-
+import argparse
 # Configuración de PaddleOCR
-ocr = PaddleOCR(use_angle_cls=True, lang='es')
+ocr = PaddleOCR(use_angle_cls=True, lang='en')
 
 def extract_text_from_image(image):
     # Realizar OCR en la imagen
@@ -31,7 +31,7 @@ def extract_text_from_image(image):
 
     return text
 
-def capture_and_extract_text():
+def capture_and_extract_text(ruta):
     # Capturar imagen desde la cámara
     cap = cv2.VideoCapture(0)
     if not cap.isOpened():
@@ -53,12 +53,17 @@ def capture_and_extract_text():
     # Guardar el texto en un archivo
     now = datetime.now()
     fecha_hora = now.strftime("%Y-%m-%d_%H-%M-%S")
-    with open(f'texto_{fecha_hora}.txt', 'w') as f:
+    with open(f'{ruta}/texto_{fecha_hora}.txt', 'w') as f:
         f.write(text)
 
     print("Texto extraído y guardado correctamente.")
 
     cap.release()
 
+
 if __name__ == "__main__":
-    capture_and_extract_text()
+    parser = argparse.ArgumentParser(description="Genera txt y lo guarda en la ruta especifica.")
+    parser.add_argument("ruta", type=str, help="Ruta donde se guardará la imagen.")
+    args = parser.parse_args()
+    capture_and_extract_text(args.ruta)
+

@@ -1,58 +1,84 @@
+from flask import Flask, render_template, request
 import cv2
-import datetime
-from time import sleep
+import pyaudio
+import wave
+import threading
 
-class VideoRecorder:
-    def __init__(self):
-        self.cap = None
-        self.output = None
-        self.recording = False
+app = Flask(__name__)
 
-    def iniciar_grabacion(self):
-        self.cap = cv2.VideoCapture(0)
-        fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-        self.output = cv2.VideoWriter(f"video_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.mp4", fourcc, 20.0, (640, 480))
-        self.recording = True
-        print("Grabación iniciada")
-        self.record()
+video_thread = None
+audio_thread = None
+cap = None
+out = None
+p = None
+frames = []
 
-    def captura_camara(self):
-        ret, frame = self.cap.read()
-        if ret:
-            now = datetime.datetime.now()
-            fecha_hora = now.strftime("%Y-%m-%d_%H-%M-%S")
-            filename = f'foto_{fecha_hora}.png'
-            cv2.imwrite(filename, frame)
-            print(f'Imagen guardada: {filename}')
+def capturar_video():
+    global cap, out
+    cap = cv2.VideoCapture(0)
+    fourcc = cv2.VideoWriter_fourcc(*'XVID')
+    out = cv2.VideoWriter('output.avi', fourcc, 20.0, (640,480))
+
+    while(cap.isOpened()):
+        ret, frame = cap.read()
+        if ret==True:
+            out.write(frame)
+            if cv2.waitKey(1) & 0xFF == ord('q'):
+                break
         else:
-            print("Error: No se puede recibir el cuadro (stream end?). Saliendo ...")
-        
-        self.cap.release()
+            break
 
-    def parar_grabacion(self):
-        self.recording = False
-        self.cap.release()
-        self.output.release()
-        cv2.destroyAllWindows()
-        print("Grabación finalizada")
+    cap.release()
+    out.release()
 
-    def record(self):
-        start_time = datetime.datetime.now()
-        while self.recording:
-            ret, frame = self.cap.read()
-            if not ret:
-                print("Error: No se puede recibir el cuadro (stream end?)")
-                break
-            self.output.write(frame)
-            current_time = datetime.datetime.now()
-            elapsed_time = (current_time - start_time).total_seconds()
-            if elapsed_time >= 7:
-                break
+def capturar_audio():
+    global p, frames
+    CHUNK = 1024
+    FORMAT = pyaudio.paInt16
+    CHANNELS = 1
+    RATE = 44100
+    RECORD_SECONDS = 10
 
-if __name__ == "__main__":
-    recorder = VideoRecorder()
-    recorder.iniciar_grabacion()
-    sleep(3)  # Espera 3 segundos antes de capturar
-    recorder.captura_camara()
-    recorder.parar_grabacion()
+    p = pyaudio.PyAudio()
+    stream = p.open(format=FORMAT,
+                    channels=CHANNELS,
+                    rate=RATE,
+                    input=True,
+                    frames_per_buffer=CHUNK)
 
+    frames = []
+    for i in range(0, int(RATE / CHUNK * RECORD_SECONDS)):
+        data = stream.read(CHUNK)
+        frames.append(data)
+
+    stream.stop_stream()
+    stream.close()
+    p.terminate()
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/start_recording')
+def start_recording():
+    global video_thread, audio_thread
+    video_thread = threading.Thread(target=capturar_video)
+    audio_thread = threading.Thread(target=capturar_audio)
+    video_thread.start()
+    audio_thread.start()
+    return 'Recording started'
+
+@app.route('/stop_recording')
+def stop_recording():
+    global cap, out, p, frames
+    if cap is not None:
+        cap.release()
+    if out is not None:
+        out.release()
+    if p is not None:
+        p.terminate()
+    frames = []
+    return 'Recording stopped'
+
+if __name__ == '__main__':
+    app.run(debug=True)

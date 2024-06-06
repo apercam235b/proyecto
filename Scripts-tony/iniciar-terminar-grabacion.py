@@ -1,6 +1,6 @@
 import cv2
 import datetime
-
+import argparse
 class VideoRecorder:
 
     def __init__(self):
@@ -15,19 +15,6 @@ class VideoRecorder:
         self.output = cv2.VideoWriter(f"video_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.mp4", fourcc, 20.0, (640, 480))
         self.recording = True
         print("Grabación iniciada")
-
-    def captura_camara():
-        ret, frame = cap.read()
-        if ret:
-            now = datetime.now()
-            fecha_hora = now.strftime("%Y-%m-%d_%H-%M-%S")
-            filename = f'foto_{fecha_hora}.png'
-            cv2.imwrite(filename, frame)
-            print(f'Imagen guardada: {filename}')
-        else:
-            print("Error: No se puede recibir el cuadro (stream end?). Saliendo ...")
-        
-        cap.release()
 
     def parar_grabacion(self):
         self.recording = False
@@ -45,10 +32,14 @@ class VideoRecorder:
             # Escribir el frame en el archivo de salida
             self.output.write(frame)
 
-if __name__ == "__main__":
-    recorder = VideoRecorder()
-    recorder.iniciar_grabacion()
-    recorder.record()
+#if __name__ == "__main__":
+   # recorder = VideoRecorder()
+   # recorder.iniciar_grabacion()
+   # recorder.record()
     # Grabar durante 10 segundos (puedes ajustar este valor según tus necesidades)
-    cv2.waitKey(1)
-    recorder.parar_grabacion()
+   # cv2.waitKey(1)
+   # recorder.parar_grabacion()
+    parser = argparse.ArgumentParser(description="Genera txt y lo guarda en la ruta especifica.")
+    parser.add_argument("ruta", type=str, help="Ruta donde se guardará la imagen.")
+    args = parser.parse_args()
+    iniciar_grabacion(args.ruta)
