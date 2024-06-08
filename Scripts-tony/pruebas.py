@@ -1,84 +1,58 @@
-from flask import Flask, render_template, request
 import cv2
-import pyaudio
-import wave
-import threading
+import sys
+import os
+import time
+from datetime import datetime
 
-app = Flask(__name__)
-
-video_thread = None
-audio_thread = None
-cap = None
-out = None
-p = None
-frames = []
-
-def capturar_video():
-    global cap, out
+def main(output_dir):
+    # Verifica si la ruta de salida existe, si no, crea el directorio
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    
+    # Obtiene la fecha y hora actuales y las formatea para el nombre del archivo
+    now = datetime.now().strftime("%Y%m%d_%H%M%S")
+    video_filename = os.path.join(output_dir, f"video_{now}.avi")
+    
+    # Inicializa la captura de video desde la cámara (0 es el índice de la cámara por defecto)
     cap = cv2.VideoCapture(0)
+    
+    # Define el codec y crea el objeto VideoWriter
     fourcc = cv2.VideoWriter_fourcc(*'XVID')
-    out = cv2.VideoWriter('output.avi', fourcc, 20.0, (640,480))
+    out = cv2.VideoWriter(video_filename, fourcc, 20.0, (640, 480))
+    
+    print("Grabando video. Ejecuta el comando de detener para parar la grabación.")
 
-    while(cap.isOpened()):
+    while True:
         ret, frame = cap.read()
-        if ret==True:
-            out.write(frame)
-            if cv2.waitKey(1) & 0xFF == ord('q'):
-                break
-        else:
+        if not ret:
+            print("Error: No se puede acceder a la cámara.")
             break
-
+        
+        out.write(frame)
+        
+        # Verifica si el archivo de señal existe
+        if os.path.exists("stop_signal.txt"):
+            print("Señal de detener recibida.")
+            os.remove("stop_signal.txt")  # Elimina el archivo de señal
+            break
+    
+    # Libera todo
     cap.release()
     out.release()
+    print(f"Video guardado en: {video_filename}")
 
-def capturar_audio():
-    global p, frames
-    CHUNK = 1024
-    FORMAT = pyaudio.paInt16
-    CHANNELS = 1
-    RATE = 44100
-    RECORD_SECONDS = 10
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Uso: python3 <nombre_del_script.py> <ruta_de_salida> o python3 <nombre_del_script.py> parar")
+    elif sys.argv[1] == "parar":
+        # Crea un archivo de señal para detener la grabación
+        with open("stop_signal.txt", "w") as f:
+            f.write("stop")
+        print("Señal de detener enviada.")
+    else:
+        output_dir = sys.argv[1]
+        # Elimina el archivo de señal si existe antes de empezar la grabación
+        if os.path.exists("stop_signal.txt"):
+            os.remove("stop_signal.txt")
+        main(output_dir)
 
-    p = pyaudio.PyAudio()
-    stream = p.open(format=FORMAT,
-                    channels=CHANNELS,
-                    rate=RATE,
-                    input=True,
-                    frames_per_buffer=CHUNK)
-
-    frames = []
-    for i in range(0, int(RATE / CHUNK * RECORD_SECONDS)):
-        data = stream.read(CHUNK)
-        frames.append(data)
-
-    stream.stop_stream()
-    stream.close()
-    p.terminate()
-
-@app.route('/')
-def index():
-    return render_template('index.html')
-
-@app.route('/start_recording')
-def start_recording():
-    global video_thread, audio_thread
-    video_thread = threading.Thread(target=capturar_video)
-    audio_thread = threading.Thread(target=capturar_audio)
-    video_thread.start()
-    audio_thread.start()
-    return 'Recording started'
-
-@app.route('/stop_recording')
-def stop_recording():
-    global cap, out, p, frames
-    if cap is not None:
-        cap.release()
-    if out is not None:
-        out.release()
-    if p is not None:
-        p.terminate()
-    frames = []
-    return 'Recording stopped'
-
-if __name__ == '__main__':
-    app.run(debug=True)

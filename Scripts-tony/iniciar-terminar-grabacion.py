@@ -1,45 +1,58 @@
 import cv2
-import datetime
-import argparse
-class VideoRecorder:
+import sys
+import os
+import time
+from datetime import datetime
 
-    def __init__(self):
-        self.cap = None
-        self.output = None
-        self.recording = False
+def main(output_dir):
+    # Verifica si la ruta de salida existe, si no, crea el directorio
 
-    def iniciar_grabacion(self):
-        self.cap = cv2.VideoCapture(0)
-        # Configurar la captura de audio si está disponible
-        fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-        self.output = cv2.VideoWriter(f"video_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.mp4", fourcc, 20.0, (640, 480))
-        self.recording = True
-        print("Grabación iniciada")
+    
+    # Obtiene la fecha y hora actuales y las formatea para el nombre del archivo
+    now = datetime.now().strftime("%Y%m%d_%H%M%S")
+    video_filename = os.path.join(output_dir, f"video_{now}.avi")
+    
+    # Inicializa la captura de video desde la cámara (0 es el índice de la cámara por defecto)
+    cap = cv2.VideoCapture(0)
+    
+    # Define el codec y crea el objeto VideoWriter
+    fourcc = cv2.VideoWriter_fourcc(*'XVID')
+    out = cv2.VideoWriter(video_filename, fourcc, 20.0, (640, 480))
+    
+    print("Grabando video. Ejecuta el comando de detener para parar la grabación.")
 
-    def parar_grabacion(self):
-        self.recording = False
-        self.cap.release()
-        self.output.release()
-        cv2.destroyAllWindows()
-        print("Grabación finalizada")
+    while True:
+        ret, frame = cap.read()
+        if not ret:
+            print("Error: No se puede acceder a la cámara.")
+            break
+        
+        out.write(frame)
+        
+        # Verifica si el archivo de señal existe
+        if os.path.exists("stop_signal.txt"):
+            print("Señal de detener recibida.")
+            os.remove("stop_signal.txt")  # Elimina el archivo de señal
+            break
+    
+    # Libera todo
+    cap.release()
+    out.release()
+    print(f"Video guardado en: {video_filename}")
 
-    def record(self):
-        while self.recording:
-            ret, frame = self.cap.read()
-            if not ret:
-                print("Error: No se puede recibir el cuadro (stream end?)")
-                break
-            # Escribir el frame en el archivo de salida
-            self.output.write(frame)
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Uso: python3 <nombre_del_script.py> <ruta_de_salida> o python3 <nombre_del_script.py> parar")
+    elif sys.argv[1] == "parar":
+        # Crea un archivo de señal para detener la grabación
+        with open("stop_signal.txt", "w") as f:
+            f.write("stop")
+        print("Señal de detener enviada.")
+    else:
+        output_dir = sys.argv[1]
+        # Elimina el archivo de señal si existe antes de empezar la grabación
+        if os.path.exists("stop_signal.txt"):
+            os.remove("stop_signal.txt")
+        main(output_dir)
 
-#if __name__ == "__main__":
-   # recorder = VideoRecorder()
-   # recorder.iniciar_grabacion()
-   # recorder.record()
-    # Grabar durante 10 segundos (puedes ajustar este valor según tus necesidades)
-   # cv2.waitKey(1)
-   # recorder.parar_grabacion()
-    parser = argparse.ArgumentParser(description="Genera txt y lo guarda en la ruta especifica.")
-    parser.add_argument("ruta", type=str, help="Ruta donde se guardará la imagen.")
-    args = parser.parse_args()
-    iniciar_grabacion(args.ruta)
+
