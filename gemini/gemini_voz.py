@@ -12,7 +12,7 @@ engine.setProperty('rate', 150)  # Velocidad de la voz
 engine.setProperty('volume', 1.0)  # Volumen de la voz
 
 # Configurar la API de Google Generative AI
-genai.configure(api_key='AIzaSyAKPxKVmVhuyKbdXVhdEIf43gTbuDhNxAk')
+genai.configure(api_key='TU API KEY')
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 def to_markdown(text):
